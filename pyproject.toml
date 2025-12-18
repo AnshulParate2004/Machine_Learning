@@ -1,0 +1,35 @@
+[project]
+name = "machine-learning"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4>=4.14.3",
+    "flask>=3.1.2",
+    "flask-cors>=6.0.2",
+    "ipykernel>=7.1.0",
+    "ipywidgets>=8.1.8",
+    "joblib>=1.5.3",
+    "jupyter>=1.1.1",
+    "lightgbm>=4.6.0",
+    "lxml>=6.0.2",
+    "matplotlib>=3.10.0",
+    "notebook>=7.5.1",
+    "numpy>=2.3.5",
+    "opencv-python>=4.11.0.86",
+    "pandas>=2.3.3",
+    "pillow>=12.0.0",
+    "plotly>=6.5.0",
+    "pymysql>=1.1.2",
+    "python-dotenv>=1.2.1",
+    "requests>=2.32.5",
+    "scikit-learn>=1.8.0",
+    "scipy>=1.16.3",
+    "seaborn>=0.13.2",
+    "sqlalchemy>=2.0.45",
+    "sweetviz>=2.3.1",
+    "tqdm>=4.67.1",
+    "xgboost>=3.1.2",
+    "ydata-profiling>=4.18.0",
+]
