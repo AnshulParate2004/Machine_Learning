@@ -1,161 +1,204 @@
-#  My Machine Learning Journey
+﻿# My Machine Learning Journey
 
-Welcome to my ML learning repository! This is a collection of my hands-on journey learning machine learning from fundamentals to production-ready applications.
-
----
-
-##  Learning Path
-
-###  Foundations
-Started with the basics of data analysis and exploration:
-- **EDA (Exploratory Data Analysis)** - Understanding data distributions and patterns
-- **Feature Engineering** - Creating meaningful features from raw data
-- **Pandas Profiling** - Automated data analysis and reporting
-
-###  Data Engineering
-Learned to collect and process data from various sources:
-- Working with APIs and CSV/TSV files
-- Web scraping with BeautifulSoup
-- Database integration with MySQL and JSON
-
-###  Supervised Learning
-
-#### Regression Models
-Progressed through regression techniques:
-1. **Simple Linear Regression** - Single variable predictions
-2. **Multi-Variate Regression** - Multiple features
-3. **Polynomial Regression** - Non-linear relationships
-4. **Ridge & Lasso Regression** - Regularization techniques
-5. **Elastic Net & GridSearch** - Advanced optimization
-
-#### Classification Models
-Explored various classification algorithms:
-- **K-Nearest Neighbors (KNN)** - Instance-based learning
-- **Decision Trees** - Tree-based decisions
-- **Random Forest & SVM** - Ensemble and kernel methods
-- **Naive Bayes** - Probabilistic classification
-- **Logistic Regression** - Binary and multi-class classification
-- **LDA/QDA** - Linear and Quadratic Discriminant Analysis
-
-###  Unsupervised Learning
-- **K-Means Clustering** - Pattern discovery without labels
-
-###  Neural Networks
-- **Backpropagation** - Core deep learning algorithm
-- **Find-S Algorithm** - Concept learning basics
-
-###  Computer Vision
-- **Background Subtraction** - Motion detection using unimodel background modeling
-- Worked with 1,000+ image dataset for real-world CV applications
+Welcome to my machine learning repository. This is a hands-on learning space covering machine learning foundations, data engineering, regression, classification, clustering, neural networks, computer vision, datasets, and production-style projects.
 
 ---
 
-##  Production Projects
+## Repository Structure
 
-###  California Housing Price Predictor
-A **full-stack ML application** that predicts house prices in California:
+```text
+Machine_Learning/
+|-- 01_Learning_and_Practice/
+|   |-- 01_Foundations/
+|   |   |-- EDA/
+|   |   |-- Encoding/
+|   |   |-- Feature_Engineering/
+|   |   `-- ML_Notes.ipynb
+|   |-- 02_Data_Engineering/
+|   |   |-- Data_Gathering/
+|   |   |-- Data_Cleaning/
+|   |   |-- API_CSV.ipynb
+|   |   |-- CSV_TSV.ipynb
+|   |   |-- JSON_MYSQL.ipynb
+|   |   `-- WebScraping_BeautifulSoup.ipynb
+|   |-- 03_Regression/
+|   |   |-- Gradient_Descent/
+|   |   |-- Gradient_Descent_Course/
+|   |   |-- Linear_Regression_Course/
+|   |   |-- Polynomial_Regression_Course/
+|   |   |-- Ridge_Regression_Course/
+|   |   |-- Time_Series/
+|   |   |-- Ensemble_Learning/
+|   |   `-- Models/
+|   |-- 04_Classification/
+|   |   |-- Concept_Learning/
+|   |   |-- Decision_Trees/
+|   |   |-- Ensemble_Learning/
+|   |   |-- Logistic_Regression_Course/
+|   |   |-- Projects/
+|   |   `-- 10_Project/
+|   |-- 05_Clustering/
+|   |   |-- KMeans/
+|   |   `-- Dimensionality_Reduction/
+|   |-- 06_Neural_Networks/
+|   |   |-- Perceptron/
+|   |   |-- Backpropagation/
+|   |   |-- From_Scratch/
+|   |   |-- Classification/
+|   |   `-- Autoencoders/
+|   `-- 07_Computer_Vision/
+|       |-- CNN/
+|       `-- 9_Unimodel_background_model/
+|-- 02_Datasets/
+|   |-- ML_LAB/
+|   |-- DL_LAB/
+|   `-- shared datasets
+|-- 03_Production_Projects/
+|   `-- California_Housing_Prediction/
+|-- _archive/
+|   `-- old nested Git metadata
+|-- FOLDER_STRUCTURE.md
+`-- README.md
+```
 
-**Tech Stack:**
-- **Backend:** Python, Flask, scikit-learn
-- **Models:** LightGBM & XGBoost (tuned and optimized)
-- **Frontend:** React, TypeScript, Tailwind CSS
-- **Features:** Real-time predictions, interactive UI, model comparison
+---
 
-**What I Learned:**
+## Learning Path
+
+### 01_Foundations
+Core data science and machine learning basics:
+
+- Exploratory Data Analysis (EDA)
+- Univariate and bivariate analysis
+- Pandas profiling
+- Encoding techniques
+- Feature engineering
+- General ML notes
+
+### 02_Data_Engineering
+Data collection, loading, cleaning, and scraping:
+
+- CSV and TSV handling
+- JSON and MySQL workflows
+- API data loading
+- Web scraping with BeautifulSoup and Selenium
+- Smartphone dataset cleaning and preparation
+
+### 03_Regression
+Regression and continuous-value prediction topics:
+
+- Simple linear regression
+- Multiple linear regression
+- Polynomial regression
+- Ridge regression
+- Lasso and Elastic Net
+- Gradient descent variants
+- Time series stock price modeling
+- Regression ensemble learning
+
+### 04_Classification
+Classification and supervised learning topics:
+
+- Logistic regression
+- Naive Bayes
+- K-Nearest Neighbors (KNN)
+- Decision trees
+- Random Forest and SVM
+- LDA and QDA
+- Find-S concept learning
+- Loan repayment classification project
+- Voting ensemble classification
+
+### 05_Clustering
+Unsupervised learning and dimensionality reduction:
+
+- KMeans clustering
+- PCA and dimensionality reduction
+
+### 06_Neural_Networks
+Deep learning foundations:
+
+- Perceptron models
+- AND gate perceptron
+- Backpropagation
+- Neural networks from scratch
+- MNIST neural network
+- Sonar classification neural network
+- Autoencoders
+
+### 07_Computer_Vision
+Computer vision and convolution-based learning:
+
+- Background subtraction
+- Convolution from scratch
+- CNN transfer learning
+- Image-based model experiments
+
+---
+
+## Datasets
+
+Datasets are centralized in `02_Datasets`.
+
+- `ML_LAB`: datasets used by machine learning lab notebooks
+- `DL_LAB`: datasets used by deep learning lab notebooks
+- Shared datasets: advertising, AMES housing, cars, customers, hearing test, penguins, salary, social network ads, and Titanic
+
+---
+
+## Production Projects
+
+### California Housing Prediction
+A production-style machine learning project for predicting California housing prices.
+
+Covered skills include:
+
 - End-to-end ML pipeline development
-- Model deployment and API design
-- Frontend-backend integration
-- Production-ready ML systems
+- Model training and evaluation
+- Backend API workflow
+- Frontend and backend integration
+- Production-oriented project structure
 
 ---
 
-##  Datasets Used
-
-Throughout this journey, I've worked with diverse datasets:
-- Housing data (California, AMES)
-- Classification datasets (Heart disease, Penguins, Social networks)
-- Regression datasets (Advertising, Salary prediction)
-- Computer vision datasets (1,000+ surveillance images)
-
----
-
-##  Skills Acquired
+## Skills Practiced
 
 ### Machine Learning
-✅ Regression & Classification algorithms  
-✅ Model evaluation & hyperparameter tuning  
-✅ Feature engineering & selection  
-✅ Ensemble methods  
-✅ Cross-validation techniques  
+- Regression and classification algorithms
+- Model evaluation
+- Hyperparameter tuning
+- Feature engineering
+- Ensemble methods
+- Cross-validation
 
 ### Data Science
-✅ Exploratory Data Analysis  
-✅ Data visualization  
-✅ Statistical analysis  
-✅ Data preprocessing & cleaning  
+- EDA
+- Data visualization
+- Statistical analysis
+- Data preprocessing
+- Data cleaning
+
+### Deep Learning
+- Perceptrons
+- Backpropagation
+- Neural networks from scratch
+- CNN basics
+- Autoencoders
 
 ### Engineering
-✅ Full-stack development  
-✅ API design & deployment  
-✅ Version control with Git  
-✅ Production ML workflows  
-
-### Tools & Libraries
-- **ML:** scikit-learn, XGBoost, LightGBM
-- **Data:** Pandas, NumPy, Matplotlib, Seaborn
-- **Web:** Flask, React, TypeScript
-- **CV:** OpenCV
+- Python project organization
+- API and data workflows
+- Git-based version control
+- Production project structure
 
 ---
 
-##  Repository Structure
+## Notes
 
-```
-  01_Learning_and_Practice/
-   ├── 01_Foundations/          # Data analysis basics
-   ├── 02_Data_Engineering/     # Data collection & processing
-   ├── 03_Regression/           # Regression algorithms
-   ├── 04_Classification/       # Classification models
-   ├── 05_Clustering/           # Unsupervised learning
-   ├── 06_Neural_Networks/      # Deep learning basics
-   └── 07_Computer_Vision/      # Image processing
-
-  02_Datasets/                  # Centralized data storage
-
-  03_Production_Projects/       # Deployed applications
-   └── California_Housing_Prediction/
-
-  04_Documentation/             # Notes & references
-```
+- Notebooks are grouped by topic instead of by old lab/course folders.
+- Lab datasets remain in `02_Datasets` for easier reuse.
+- `_archive` only stores old nested Git metadata from the previous course notes folder.
 
 ---
 
-##  What's Next?
-
-Currently exploring:
-- Deep Learning with TensorFlow/PyTorch
-- Natural Language Processing
-- Advanced Computer Vision techniques
-- MLOps and model monitoring
-
----
-
-##  Key Takeaways
-
-1. **Start Simple** - Master the basics before moving to complex algorithms
-2. **Practice Daily** - Consistency beats intensity
-3. **Build Projects** - Theory + Practice = True Understanding
-4. **Document Everything** - Your future self will thank you
-5. **Deploy Your Models** - Real-world deployment teaches valuable lessons
-
----
-
-##  Connect
-
-This repository represents months of dedicated learning and hands-on practice. Each notebook tells a story of challenges overcome and concepts mastered.
-
-**"The journey of a thousand miles begins with a single step"** - and this is my ML journey! 
-
----
-
-*Last Updated: December 2025*
+*Last Updated: July 2026*
